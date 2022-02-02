@@ -6,6 +6,8 @@ const StudentSchema = new mongoose.Schema({
   username: String,
   first_name: String,
   last_name: String,
+  reason_for_joining: String,
+  reason_for_leaving: String,
 });
 
 export default mongoose.models.B13_Student ||

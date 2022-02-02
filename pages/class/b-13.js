@@ -1,5 +1,7 @@
 import { Text, Table, Thead, Tr, Th, Tbody, Td, Tfoot } from "@chakra-ui/react";
 import Head from "next/head";
+import { useState } from "react";
+import StudentList from "../../components/student_list";
 import dbConnect from "../../lib/dbConnect";
 import B13Student from "../../models/student";
 
@@ -19,6 +21,7 @@ import B13Student from "../../models/student";
 // ];
 
 const B13 = ({ students }) => {
+  const [showStudentList, setShowStudentList] = useState(true);
   return (
     <>
       <Head>
@@ -32,35 +35,13 @@ const B13 = ({ students }) => {
       >
         IX3005 learn to code
       </Text>
-      <Text fontWeight={"bold"} align={"center"} marginTop={10}>
-        Student List
-      </Text>
-      <Table size="sm" maxW={"lg"} mx={"auto"} my={10}>
-        <Thead>
-          <Tr>
-            <Th>ID</Th>
-            <Th>First Name</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {students.map((student, idx) => (
-            <Tr
-              key={student.student_id}
-              id={`b13-${student.student_id}`}
-              color={idx % 2 === 0 ? "blue.400" : "red.400"}
-            >
-              <Td>{student.student_id}</Td>
-              <Td>{student.first_name}</Td>
-            </Tr>
-          ))}
-        </Tbody>
-        <Tfoot>
-          <Tr>
-            <Th>Total</Th>
-            <Th>{students.length}</Th>
-          </Tr>
-        </Tfoot>
-      </Table>
+      
+      {showStudentList && (
+        <StudentList
+          setShowStudentList={setShowStudentList}
+          students={students}
+        />
+      )}
     </>
   );
 };
