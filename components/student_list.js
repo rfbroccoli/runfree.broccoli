@@ -1,11 +1,22 @@
-import { Text, Table, Thead, Tr, Th, Tbody, Td, Tfoot } from "@chakra-ui/react";
+import {
+  Text,
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+  Tfoot,
+  Button,
+} from "@chakra-ui/react";
 
-const StudentList = ({ setShowStudentList, students }) => {
+const StudentList = ({ students }) => {
   return (
     <>
-      <Text fontWeight={"bold"} align={"center"} marginTop={10}>
+      {/* <Text fontWeight={"bold"} align={"center"}>
         Student List
-      </Text>
+      </Text> */}
+
       <Table size="sm" maxW={"lg"} mx={"auto"} my={10}>
         <Thead>
           <Tr>
