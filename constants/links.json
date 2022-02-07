@@ -1,0 +1,65 @@
+[
+    {
+        "title": "vscode",
+        "href": "https://code.visualstudio.com/",
+        "svg": "https://upload.vectorlogo.zone/logos/visualstudio_code/images/a4381320-f83c-4a29-9db3-b241c1d096b1.svg",
+        "desc": "text editor",
+        "type": "recommended"
+    },
+    {
+        "title": "git",
+        "href": "https://git-scm.com/download/",
+        "svg": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+        "desc": "version control",
+        "type": "must-have"
+    },
+    {
+        "title": "nodejs",
+        "href": "https://nodejs.org/en/",
+        "svg": "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg",
+        "desc": "runtime environment",
+        "type": "must-have"
+    },
+    {
+        "title": "github",
+        "href": "https://github.com/",
+        "svg": "https://www.vectorlogo.zone/logos/github/github-tile.svg",
+        "desc": "project hosting",
+        "type": "must-have"
+    },
+    {
+        "title": "npm",
+        "href": "https://www.npmjs.com/",
+        "svg": "https://www.vectorlogo.zone/logos/npmjs/npmjs-tile.svg",
+        "desc": "node package manager",
+        "type": "reference"
+    },
+    {
+        "title": "learn to code rpg",
+        "href": "https://freecodecamp.itch.io/learn-to-code-rpg/",
+        "svg": "https://img.itch.zone/aW1nLzc2OTE1NDgucG5n/original/vZwsyb.png",
+        "desc": "game",
+        "type": "reference"
+    },
+    {
+        "title": "freecodecamp",
+        "href": "https://www.freecodecamp.org/learn/",
+        "svg": "https://www.svgrepo.com/show/306072/freecodecamp.svg",
+        "desc": "coding camp",
+        "type": "reference"
+    },
+    {
+        "title": "brave browser",
+        "href": "https://brave.com/",
+        "svg": "https://www.vectorlogo.zone/logos/brave/brave-icon.svg",
+        "desc": "browser",
+        "type": "recommended"
+    },
+    {
+        "title": "cloudflare vpn",
+        "href": "https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/download-warp",
+        "svg": "https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg",
+        "desc": "vpn",
+        "type": "recommended"
+    }
+]

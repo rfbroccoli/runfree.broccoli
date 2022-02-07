@@ -6,7 +6,7 @@ import {
   Box,
   Icon,
   useColorModeValue,
-  createIcon
+  createIcon,
 } from "@chakra-ui/react";
 import Link from "next/link";
 export const Logo = () => (
@@ -29,6 +29,35 @@ const Arrow = createIcon({
     />
   ),
 });
+
+export const SectionInClass = ({ item, itemName, setState, display }) => (
+  <Box>
+    <Box my={10} align={"center"}>
+      <Button
+        onClick={() => setState((prevVal) => !prevVal)}
+        variant={"outline"}
+        size={"sm"}
+      >
+        {display ? `hide ${itemName}` : `show ${itemName}`}
+      </Button>
+    </Box>
+    {display && item}
+  </Box>
+);
+
+export const ButtonWithoutArrow = ({ buttonText, href, color = "pink" }) => (
+  <Button
+    colorScheme={"pink"}
+    bg={`${color}.400`}
+    rounded={"full"}
+    px={6}
+    _hover={{
+      bg: `${color}.500`,
+    }}
+  >
+    <Link href={href}>{buttonText}</Link>
+  </Button>
+);
 
 export const ButtonWithArrow = ({ buttonText, arrowText, href }) => (
   <Stack

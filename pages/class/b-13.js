@@ -1,12 +1,21 @@
 import { Text, Link, Box, Button } from "@chakra-ui/react";
 import Head from "next/head";
 import { useState } from "react";
+import { SectionInClass } from "../../components/common";
+import CourseOutline from "../../components/course_outline";
+import Links from "../../components/links";
+import Projects from "../../components/projects";
 import StudentList from "../../components/student_list";
 import dbConnect from "../../lib/dbConnect";
-import B13Student from "../../models/student";
+import Student from "../../models/student";
+import Project from "../../models/project";
 
-export default function B13Class({ students }) {
+export default function B13Class({ students, projects }) {
   const [showStudentList, setShowStudentList] = useState(true);
+  const [showProjects, setShowProjects] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
+  // const [showOutline, setShowOutline] = useState(false);
+
   return (
     <>
       <Head>
@@ -15,31 +24,31 @@ export default function B13Class({ students }) {
       <Text fontWeight={"bold"} color={"pink.400"} align={"center"} my={10}>
         IX3005 learn to code
       </Text>
-      <Box align={"center"}>
-        <Text fontWeight={"bold"} marginBottom={10}>
-          Register လုပ်နည်း
-        </Text>
 
-        <Text>
-          List ထဲမပါသေးရင်{" "}
-          <Link href="https://t.me/rf_b_bot" color={"blue.400"} isExternal>
-            t.me/rf_b_bot
-          </Link>{" "}
-          ကို သွားပြီး /register လို့ပို့ပြီး စာရင်းသွင်းပါ
-        </Text>
-      </Box>
-      <Box>
-        <Box my={10} align={"center"}>
-          <Button
-            onClick={() => setShowStudentList((prevVal) => !prevVal)}
-            variant={"outline"}
-            size={"sm"}
-          >
-            {showStudentList ? "Hide Student List" : "Show Student List"}
-          </Button>
-        </Box>
-        {showStudentList && <StudentList students={students} />}
-      </Box>
+      {/* <SectionInClass
+        item={<CourseOutline />}
+        itemName={"course outline"}
+        display={showOutline}
+        setState={setShowOutline}
+      /> */}
+      <SectionInClass
+        item={<Projects projects={projects} />}
+        itemName={"projects"}
+        display={showProjects}
+        setState={setShowProjects}
+      />
+      <SectionInClass
+        item={<StudentList students={students} />}
+        itemName={"students list"}
+        display={showStudentList}
+        setState={setShowStudentList}
+      />
+      <SectionInClass
+        item={<Links />}
+        itemName={"links"}
+        display={showLinks}
+        setState={setShowLinks}
+      />
     </>
   );
 }
@@ -48,12 +57,22 @@ export async function getServerSideProps() {
   await dbConnect();
 
   /* find all the data in our database */
-  const result = await B13Student.find({});
-  const students = result.map((doc) => {
+  const studentDocs = await Student.find();
+  const students = studentDocs.map((doc) => {
     const student = doc.toObject();
     student._id = student._id.toString();
     return student;
   });
 
-  return { props: { students } };
+  const projectDocs = await Project.find();
+  console.log(projectDocs);
+  const projects = projectDocs.map((doc) => {
+    const project = doc.toObject();
+    project._id = project._id.toString();
+    project.updated_at = project.updated_at.toISOString();
+    return project;
+  });
+
+  console.log(projectDocs);
+  return { props: { students, projects } };
 }

@@ -1,5 +1,6 @@
 import {
   Text,
+  Link,
   Table,
   Thead,
   Tr,
@@ -7,7 +8,7 @@ import {
   Tbody,
   Td,
   Tfoot,
-  Button,
+  Box,
 } from "@chakra-ui/react";
 
 const StudentList = ({ students }) => {
@@ -16,7 +17,19 @@ const StudentList = ({ students }) => {
       {/* <Text fontWeight={"bold"} align={"center"}>
         Student List
       </Text> */}
+      <Box align={"center"}>
+        <Text fontWeight={"bold"} marginBottom={10}>
+          register လုပ်နည်း
+        </Text>
 
+        <Text>
+          list ထဲမပါသေးရင်{" "}
+          <Link href="https://t.me/rf_b_bot" color={"blue.400"} isExternal>
+            t.me/rf_b_bot
+          </Link>{" "}
+          ကို သွားပြီး /register လို့ပို့ပြီး စာရင်းသွင်းပါ
+        </Text>
+      </Box>
       <Table size="sm" maxW={"lg"} mx={"auto"} my={10}>
         <Thead>
           <Tr>
