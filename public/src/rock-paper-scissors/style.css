@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(209, 244, 255);
+}
+.container {
+  text-align: center;
+}
+
+.box {
+  text-align: center;
+}
+
+.move {
+  width: 10rem;
+  font-size: 6rem;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 3rem;
+  text-align: center;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.button {
+  font-size: 4rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.number {
+  margin-bottom: 2rem;
+  width: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.gray {
+  color: gray;
+}

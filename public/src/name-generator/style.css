@@ -1,0 +1,29 @@
+body {
+  background: teal;
+  color: white;
+}
+.container {
+  text-align: center;
+  padding: 5rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.display-box {
+  font-size: 7rem;
+}
+
+.generate-button {
+  font-size: large;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.number {
+  margin-bottom: 2rem;
+  width: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
