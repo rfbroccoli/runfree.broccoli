@@ -27,7 +27,6 @@ import {
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useRouterRefresh } from "../lib/hooks";
 import { useRouter } from "next/router";
 
 // const MY_SECRET_KEY = process.env.MY_SECRET_KEY
