@@ -1,0 +1,327 @@
+[
+    {
+        "title": "0 and 1",
+        "done": true,
+        "class": 1
+    },
+    {
+        "title": "binary code vs source code",
+        "done": true,
+        "class": 1
+    },
+    {
+        "title": "programming languages",
+        "done": false,
+        "subtitles": [
+            {
+                "title": "static",
+                "done": false
+            },
+            {
+                "title": "dynamic",
+                "done": false
+            }
+        ]
+    },
+    {
+        "title": "javascript",
+        "done": false,
+        "class": 2,
+        "subtitles": [
+            {
+                "title": "variables",
+                "done": true,
+                "bold": true,
+                "subtitles": [
+                    {
+                        "title": "const",
+                        "desc": "ပြောင်းလို့မရတဲ့ variable",
+                        "bold": true,
+                        "done": true
+                    },
+                    {
+                        "title": "let",
+                        "desc": "ပြောင်းလို့ရတဲ့ variable",
+                        "bold": true,
+                        "done": true
+                    }
+                ]
+            },
+            {
+                "title": "data types",
+                "done": false,
+                "bold": false,
+                "subtitles": [
+                    {
+                        "title": "primitives",
+                        "desc": "ပင်မ data types",
+                        "done": false,
+                        "subtitles": [
+                            {
+                                "title": "boolean",
+                                "desc": "true & false",
+                                "bold": true,
+                                "done": true
+                            },
+                            {
+                                "title": "null",
+                                "desc": "မရှိတာ",
+                                "bold": true,
+                                "done": true
+                            },
+                            {
+                                "title": "undefined",
+                                "desc": "မသိတာ",
+                                "bold": true,
+                                "done": true
+                            },
+                            {
+                                "title": "numbers",
+                                "desc": "1, 2, 3, ..., 2e53 -1",
+                                "bold": true,
+                                "done": true
+                            },
+                            {
+                                "title": "bigInt",
+                                "desc": "1, 2, 3, ..., unlimited",
+                                "bold": false,
+                                "done": true
+                            },
+                            {
+                                "title": "string",
+                                "desc": "\"string\", \"hello world\"",
+                                "bold": true,
+                                "done": true
+                            },
+                            {
+                                "title": "symbol",
+                                "desc": "true & false",
+                                "bold": false,
+                                "done": false
+                            }
+                        ]
+                    },
+                    {
+                        "title": "objects",
+                        "desc": "ပြောင်းလို့ရတဲ့ variable",
+                        "done": false,
+                        "subtitles": [
+                            {
+                                "title": "function",
+                                "desc": "function(){}",
+                                "bold": true,
+                                "done": false
+                            },
+                            {
+                                "title": "array",
+                                "desc": "[1,2,3], ['student1', 'student2']",
+                                "bold": true,
+                                "done": false
+                            },
+                            {
+                                "title": "object",
+                                "desc": "{name: 'object', primitive: false}",
+                                "bold": true,
+                                "done": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "operators",
+                "bold": true,
+                "done": false,
+                "subtitles": [
+                    {
+                        "title": "=",
+                        "desc": "နမည်ပေး",
+                        "bold": true,
+                        "done": true
+                    },
+                    {
+                        "title": "==",
+                        "desc": "loose equal",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "===",
+                        "desc": "strict equal",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "+",
+                        "desc": "အပေါင်း",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "-",
+                        "desc": "အနုတ်",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "*",
+                        "desc": "အမြှောက်",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "/",
+                        "desc": "အစား",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "%",
+                        "desc": "အကြွင်း",
+                        "bold": true,
+                        "done": false
+                    }
+                ]
+            },
+            {
+                "title": "logical operators",
+                "bold": true,
+                "done": false,
+                "subtitles": [
+                    {
+                        "title": "!",
+                        "desc": "NOT",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "||",
+                        "desc": "OR",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "&&",
+                        "desc": "AND",
+                        "bold": true,
+                        "done": false
+                    }
+                ]
+            },
+            {
+                "title": "logical statements",
+                "bold": true,
+                "done": false,
+                "subtitles": [
+                    {
+                        "title": "if () {}",
+                        "desc": "if something",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "if () {} else {}",
+                        "desc": "if something or",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "if () {} else if () {} ",
+                        "desc": "if something or if another",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "switch () {case something}",
+                        "desc": "cases",
+                        "bold": true,
+                        "done": false
+                    }
+                ]
+            },
+            {
+                "title": "loops",
+                "bold": true,
+                "done": false,
+                "subtitles": [
+                    {
+                        "title": "for (let i=0; i < something; i++)",
+                        "desc": "for loop",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "for (let i of array)",
+                        "desc": "for each element",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "for (let i in array)",
+                        "desc": "for each index",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "for (let i in obj)",
+                        "desc": "for each key",
+                        "bold": true,
+                        "done": false
+                    },
+                    {
+                        "title": "while () {}",
+                        "desc": "while loop",
+                        "bold": true,
+                        "done": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "vscode",
+        "done": false,
+        "subtitles": [
+            {
+                "title": "keyboard shortcuts",
+                "subtitles": [
+                    {
+                        "title": "ctrl + s",
+                        "desc": "save",
+                        "bold": true
+                    },
+                    {
+                        "title": "shift + alt + f",
+                        "desc": "format",
+                        "bold": true
+                    },
+                    {
+                        "title": "ctrl + /",
+                        "desc": "comment",
+                        "bold": true
+                    },
+                    {
+                        "title": "alt + up <or> down",
+                        "desc": "move line",
+                        "bold": true
+                    },
+                    {
+                        "title": "shift + alt + up <or> down",
+                        "desc": "copy & move line",
+                        "bold": true
+                    },
+                    {
+                        "title": "ctrl + f",
+                        "desc": "find",
+                        "bold": true
+                    },
+                    {
+                        "title": "ctrl + d",
+                        "desc": "select & find the same word",
+                        "bold": true
+                    }
+                ]
+            }
+        ]
+    }
+]
