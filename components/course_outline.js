@@ -22,7 +22,7 @@ const RecursiveListItem = ({ list }) => (
             hasArrow
             label={listItem.desc}
             placement={"top"}
-            bg={useColorModeValue("teal.400")}
+            bg={"teal.400"}
           >
             {listItem.title}
           </Tooltip>
